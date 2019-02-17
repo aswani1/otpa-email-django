@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+    <body id="LoginForm">
+    <div class="container">
+    <h1 class="form-heading">login Form</h1>
+    <div class="login-form">
+    <div class="main-div">
+        <div class="panel">
+       <h2>Admin Login</h2>
+       <p>check mail and enter the otp</p>
+       </div>
+        <form id="Login" action="/otp/" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+    
+    
+                <input type="text" name="otp" class="form-control" id="inputEmail" placeholder="OTP">
+    
+            </div>
+ 
+            <div class="forgot">
+            <a href="/signup">Register</a>
+    </div>
+            <button type="submit" class="btn btn-primary">submit</button>
+    
+        </form>
+        </div>
+    
+    </div></div></div>
+    
+    
+    </body>
+{% endblock %}
+    

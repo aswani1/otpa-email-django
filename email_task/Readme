@@ -1,0 +1,12 @@
+For email servise
+
+change this  in setting.py
+
+'also enable allow lowlevel access in gmail account security settings'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'yourgmail account <example@gmail.com>'
+EMAIL_HOST_PASSWORD = '<email password>'
